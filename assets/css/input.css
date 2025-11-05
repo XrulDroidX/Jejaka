@@ -2,3 +2,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* JEJAKA custom theme */
+:root {
+  --brand-50:  #eff6ff;
+  --brand-100: #dbeafe;
+  --brand-200: #bfdbfe;
+  --brand-300: #93c5fd;
+  --brand-400: #60a5fa;
+  --brand-500: #3b82f6; /* primary soft blue */
+  --brand-600: #2563eb;
+  --brand-700: #1d4ed8;
+}
+
+.app-gradient {
+  background: linear-gradient(135deg, var(--brand-50), #ffffff);
+}
+
+.bg-pinto-soft {
+  background-image: url("../images/pinto-aceh-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.brand-btn {
+  @apply inline-flex items-center px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.brand-chip {
+  @apply inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700;
+}
+
+/* Ensure readable default text in light mode */
+body { color: #0f172a; } /* slate-900 */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
