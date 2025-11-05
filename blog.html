@@ -20,36 +20,52 @@
 
     <header class="sticky top-0 z-30 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">JEJAKA</a>
+            
+            <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
+                JEJAKA
+            </a>
+
             <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
                 <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Beranda</a>
                 <a href="tentang.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tentang</a>
                 <a href="galeri.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeri</a>
-                <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/50">Blog</a>
-                <a href="kontak.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kontak</a>
+                <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/50">Blog</a> <a href="kontak.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kontak</a>
+                
                 <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
                     <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
                     <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
                 </button>
             </div>
-            <button id="menu-open-btn" class="md:hidden p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><i data-lucide="menu" class="text-slate-800 dark:text-slate-200"></i></button>
+
+            <div class="flex items-center space-x-2 md:hidden">
+                <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
+                    <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
+                </button>
+                <button id="menu-open-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="menu" class="text-slate-800 dark:text-slate-200"></i>
+                </button>
+            </div>
         </nav>
     </header>
     <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"></div>
     <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-72 bg-white dark:bg-slate-900 z-50 shadow-xl overflow-y-auto">
         <div class="p-4">
-            <div class="flex justify-between items-center mb-4"><span class="text-xl font-bold text-primary-600 dark:text-primary-400">Menu</span><button id="menu-close-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700"><i data-lucide="x"></i></button></div>
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-xl font-bold text-primary-600 dark:text-primary-400">Menu</span>
+                <button id="menu-close-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
             <nav class="flex flex-col space-y-2">
                 <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
                 <a href="tentang.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang</a>
                 <a href="galeri.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Galeri</a>
-                <a href="blog.html" class="block px-4 py-2 rounded-md font-medium text-primary-600 bg-primary-50 dark:text-primary-300 dark:bg-primary-900/50">Blog</a>
-                <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+                <a href="blog.html" class="block px-4 py-2 rounded-md font-medium text-primary-600 bg-primary-50 dark:text-primary-300 dark:bg-primary-900/50">Blog</a> <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
             </nav>
-            <div class="border-t border-slate-200 dark:border-slate-700 mt-4 pt-4"><button class="theme-toggle-btn w-full flex justify-between items-center px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800"><span>Ganti Tema</span><div><i data-lucide="sun" class="text-slate-700 dark:hidden"></i><i data-lucide="moon" class="text-slate-300 hidden dark:block"></i></div></button></div>
-        </div>
+            </div>
     </div>
-
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center" data-aos="fade-up">
             <h1 class="text-4xl font-extrabold">Blog & Berita</h1>
@@ -85,7 +101,7 @@
                     </div>
                 </div>
             </article>
-
+            
             </div>
     </main>
 
@@ -101,4 +117,5 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
-</html>
+            </html>
+            
