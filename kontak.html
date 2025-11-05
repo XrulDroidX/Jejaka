@@ -19,57 +19,54 @@
 <body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800">
 
     <header class="sticky top-0 z-30 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
-    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
-        
-        <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
-            JEJAKA
-        </a>
-
-        <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
-            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/50">Beranda</a>
-            <a href="tentang.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tentang</a>
-            <a href="galeri.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeri</a>
-            <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
-            <a href="kontak.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kontak</a>
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
             
-            <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
-                <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
-            </button>
-        </div>
+            <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
+                JEJAKA
+            </a>
 
-        <div class="flex items-center space-x-2 md:hidden">
-            <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
-                <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
-            </button>
-            
-            <button id="menu-open-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                <i data-lucide="menu" class="text-primary-600 dark:text-primary-400"></i>
-            </button>
-        </div>
-    </nav>
-</header>
-    <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"></div>
+            <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
+                <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Beranda</a>
+                <a href="tentang.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tentang</a>
+                <a href="galeri.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeri</a>
+                <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                <a href="kontak.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/50">Kontak</a> <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
+                    <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
+                </button>
+            </div>
 
-<div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-72 bg-white dark:bg-slate-900 z-50 shadow-xl overflow-y-auto">
-    <div class="p-4">
-        <div class="flex justify-between items-center mb-4">
-            <span class="text-xl font-bold text-primary-600 dark:text-primary-400">Menu</span>
-            <button id="menu-close-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700">
-                <i data-lucide="x"></i>
-            </button>
-        </div>
-        
-        <nav class="flex flex-col space-y-2">
-            <a href="index.html" class="block px-4 py-2 rounded-md font-medium text-primary-600 bg-primary-50 dark:text-primary-300 dark:bg-primary-900/50">Beranda</a>
-            <a href="tentang.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang</a>
-            <a href="galeri.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Galeri</a>
-            <a href="blog.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Blog</a>
-            <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+            <div class="flex items-center space-x-2 md:hidden">
+                <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
+                    <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
+                </button>
+                <button id="menu-open-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="menu" class="text-primary-600 dark:text-primary-400"></i>
+                </button>
+            </div>
         </nav>
+    </header>
+
+    <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"></div>
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-72 bg-white dark:bg-slate-900 z-50 shadow-xl overflow-y-auto">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-xl font-bold text-primary-600 dark:text-primary-400">Menu</span>
+                <button id="menu-close-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <nav class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
+                <a href="tentang.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang</a>
+                <a href="galeri.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Galeri</a>
+                <a href="blog.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Blog</a>
+                <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium text-primary-600 bg-primary-50 dark:text-primary-300 dark:bg-primary-900/50">Kontak</a> </nav>
+        </div>
     </div>
-</div>
+
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="max-w-xl mx-auto">
             <div class="text-center" data-aos="fade-up">
@@ -83,46 +80,4 @@
                 data-netlify="true" 
                 data-aos="fade-up" 
                 data-aos-delay="100"
-                class="mt-10 bg-white dark:bg-slate-800 p-8 rounded-lg shadow-xl space-y-6">
-                
-                <div>
-                    <label for="nama" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" required
-                           class="mt-1 block w-full px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500">
-                </div>
-                
-                <div>
-                    <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Email</label>
-                    <input type="email" id="email" name="email" required
-                           class="mt-1 block w-full px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500">
-                </div>
-
-                <div>
-                    <label for="pesan" class="block text-sm font-medium text-slate-700 dark:text-slate-300">Pesan Anda</label>
-                    <textarea id="pesan" name="pesan" rows="5" required
-                              class="mt-1 block w-full px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"></textarea>
-                </div>
-                
-                <div>
-                    <button type="submit" class="w-full px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
-                        Kirim Pesan
-                    </button>
-                </div>
-            </form>
-        </div>
-    </main>
-
-    <footer class="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-                <div class="mb-4 md:mb-0"><span class="text-lg font-bold text-primary-600 dark:text-primary-400">JEJAKA</span><p class="text-sm text-slate-600 dark:text-slate-300">© 2025 Jejak Langkah Kita. Semua hak cipta dilindungi.</p></div>
-                <div class="text-sm text-slate-600 dark:text-slate-300 space-x-4"><a href="tentang.html" class="hover:text-primary-600 transition-colors">Tentang</a><a href="kontak.html" class="hover:text-primary-600 transition-colors">Kontak</a><a href="kebijakan-privasi.html" class="hover:text-primary-600 transition-colors">Kebijakan Privasi</a></div>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
-                        </html>
-                        
+                class="mt-10 bg-white dark:bg-slate-800 p-8 rounded-
