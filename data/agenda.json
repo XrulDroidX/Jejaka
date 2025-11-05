@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Pelatihan Dasar Digital",
+    "date": "2025-11-20T08:00:00",
+    "status": "upcoming",
+    "place": "Balai Desa",
+    "desc": "Kelas pengantar literasi digital untuk pemuda."
+  },
+  {
+    "title": "Bakti Sosial Pantai",
+    "date": "2025-10-01T08:00:00",
+    "status": "past",
+    "place": "Pantai Ujong",
+    "desc": "Aksi bersih pantai & edukasi lingkungan."
+  },
+  {
+    "title": "Rapat Koordinasi Bulanan",
+    "date": "2025-11-08T09:00:00",
+    "status": "ongoing",
+    "place": "Sekretariat JEJAKA",
+    "desc": "Koordinasi lintas divisi."
+  }
+]
