@@ -24,7 +24,7 @@
 
 <body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800" class="app-gradient bg-pinto-soft" class="app-gradient bg-pinto-soft">
 
-    <header class="sticky top-0 z-30 w-full section-card dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
+    <header class="reveal" class="sticky top-0 z-30 w-full section-card dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center"><a href="index.html" class="flex items-center gap-2 no-underline"><img loading="lazy" src="assets/images/logo-jejaka.svg" alt="JEJAKA" class="h-8 w-auto"/><span class="font-semibold tracking-tight">JEJAKA</span></a>
             
             
@@ -98,24 +98,25 @@
     <h1 class="text-3xl font-bold tracking-tight">Dokumen Organisasi</h1>
     <p class="text-slate-600 mt-2">Unduh berkas resmi JEJAKA. Semua file akan diperbarui berkala.</p>
   </header>
-  <section class="section-card p-0 overflow-hidden">
+  <section class="section-card reveal p-0 overflow-hidden">
     <ul class="divide-y divide-slate-200">
+<li><a href="testimoni.html" class="block py-2">Testimoni</a></li>
 <li><a href="program.html" class="block py-2">Program & Agenda</a></li>
-      <li class="p-5 flex items-center justify-between gap-4">
+      <li class="p-5 flex sm:items-center justify-between gap-4">
         <div>
           <h2 class="text-lg font-semibold">AD/ART JEJAKA</h2>
           <p class="text-sm text-slate-600">Anggaran Dasar & Anggaran Rumah Tangga.</p>
         </div>
         <a href="assets/docs/AD_ART_JEJAKA.pdf" download class="brand-btn">Unduh PDF</a>
       </li>
-      <li class="p-5 flex items-center justify-between gap-4">
+      <li class="p-5 flex sm:items-center justify-between gap-4">
         <div>
           <h2 class="text-lg font-semibold">Panduan Program</h2>
           <p class="text-sm text-slate-600">Standar pelaksanaan program internal & kolaborasi.</p>
         </div>
         <a href="assets/docs/Panduan_Program.pdf" download class="brand-btn">Unduh PDF</a>
       </li>
-      <li class="p-5 flex items-center justify-between gap-4">
+      <li class="p-5 flex sm:items-center justify-between gap-4">
         <div>
           <h2 class="text-lg font-semibold">Template Proposal Kerja Sama</h2>
           <p class="text-sm text-slate-600">Gunakan templat resmi untuk pengajuan kemitraan.</p>
@@ -146,5 +147,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
   <script src="assets/js/active-nav.js"></script>
+  <script src="assets/js/reveal.js"></script>
 </body>
 </html>
