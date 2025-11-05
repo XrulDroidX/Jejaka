@@ -15,7 +15,6 @@
     }
     update(); setInterval(update,1000);
   }
-  // If data-target preset, run; otherwise defer to countdown-auto.js to call startCountdown
   if(el.dataset.target){ startCountdown(el.dataset.target); }
   window.__startCountdown = startCountdown;
 })();
