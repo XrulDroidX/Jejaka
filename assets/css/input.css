@@ -50,3 +50,11 @@ body { color: var(--ink); background-color: var(--brand-50); }
 .section-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(6px); border: 1px solid rgba(15,23,42,0.06); border-radius: 1rem; }
 .hero { background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0)); }
 .text-muted { color: var(--muted); }
+
+
+:root { --ring: 68 85% 60%; }
+:focus-visible { outline: 3px solid hsl(var(--ring)); outline-offset: 2px; }
+a:focus-visible, button:focus-visible { border-radius: .5rem; }
+.nav-link[aria-current="page"], .nav-link.active { font-weight: 600; }
+.nav-pill[aria-current="page"], .nav-pill.active { background: #eff6ff; color: #1d4ed8; }
+.section-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(6px); border: 1px solid rgba(15,23,42,0.06); border-radius: 1rem; }
