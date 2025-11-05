@@ -14,12 +14,12 @@
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800">
+<body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800" class="app-gradient bg-pinto-soft">
 
     <header class="sticky top-0 z-30 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
             
-            <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
+            <a href="index.html" class="flex items-center gap-2 no-underline"><img src="assets/images/logo-jejaka.svg" alt="JEJAKA" class="h-8 w-auto"/><span class="font-semibold">JEJAKA</span></a><a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
                 JEJAKA
             </a>
 
@@ -110,70 +110,41 @@
             </ul>
         </article>
 
-        <section id="pengurus" class="max-w-5xl mx-auto mt-20 pt-12 border-t border-slate-200 dark:border-slate-700">
-            <div class="text-center" data-aos="fade-up">
-                <h2 class="text-3xl font-bold">Susunan Pengurus</h2>
-                <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">Tim inti di balik layar JEJAKA.</p>
-            </div>
+        
+<section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <header class="mb-8 text-center">
+    <h1 class="text-3xl font-bold tracking-tight">Susunan Pengurus</h1>
+    <p class="text-slate-600 mt-2">Struktur inti periode berjalan.</p>
+  </header>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <article class="rounded-2xl border border-slate-200 bg-white/80 backdrop-blur p-6 shadow-sm">
+      <h2 class="text-sm font-medium text-slate-500">Ketua</h2>
+      <p class="mt-2 text-xl font-semibold">Zamaris</p>
+    </article>
+    <article class="rounded-2xl border border-slate-200 bg-white/80 backdrop-blur p-6 shadow-sm">
+      <h2 class="text-sm font-medium text-slate-500">Wakil Ketua</h2>
+      <p class="mt-2 text-xl font-semibold">Imam</p>
+    </article>
+    <article class="rounded-2xl border border-slate-200 bg-white/80 backdrop-blur p-6 shadow-sm">
+      <h2 class="text-sm font-medium text-slate-500">Bendahara</h2>
+      <p class="mt-2 text-xl font-semibold">Fadil</p>
+    </article>
+    <article class="rounded-2xl border border-slate-200 bg-white/80 backdrop-blur p-6 shadow-sm">
+      <h2 class="text-sm font-medium text-slate-500">Sekretaris</h2>
+      <p class="mt-2 text-xl font-semibold">Abi</p>
+    </article>
+  </div>
+  <p class="text-center text-slate-500 mt-6">Posisi lain menyusul.</p>
+</section>
 
-            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div data-aos="fade-up" data-aos-delay="100" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
-                    <img src="https://picsum.photos/id/237/200/200" alt="Foto Pengurus 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
-                    <h3 class="text-xl font-semibold">Nama Ketua</h3>
-                    <p class="text-primary-600 dark:text-primary-400">Ketua Umum</p>
-                </div>
-                
-                <div data-aos="fade-up" data-aos-delay="200" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
-                    <img src="https://picsum.photos/id/238/200/200" alt="Foto Pengurus 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
-                    <h3 class="text-xl font-semibold">Nama Sekretaris</h3>
-                    <p class="text-primary-600 dark:text-primary-400">Sekretaris Jenderal</p>
-                </div>
 
-                <div data-aos="fade-up" data-aos-delay="300" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
-                    <img src="https://picsum.photos/id/239/200/200" alt="Foto Pengurus 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
-                    <h3 class="text-xl font-semibold">Nama Bendahara</h3>
-                    <p class="text-primary-600 dark:text-primary-400">Bendahara Umum</p>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="laporan" class="max-w-3xl mx-auto mt-20 pt-12 border-t border-slate-200 dark:border-slate-700">
-            <div data-aos="fade-up">
-                <h2 class="text-3xl font-bold">Dokumen & Laporan</h2>
-                <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">Transparansi adalah kunci kami. Unduh laporan dan dokumen organisasi di sini.</p>
-            </div>
-
-            <div data-aos="fade-up" data-aos-delay="100" class="mt-8 space-y-4">
-                
-                <a href="assets/documents/laporan-tahunan-2025.pdf" download="Laporan Tahunan JEJAKA 2025.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="flex items-center">
-                        <i data-lucide="file-text" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
-                        <span class="ml-3 font-medium">Laporan Tahunan 2025</span>
-                    </div>
-                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
-                </a>
-                
-                <a href="assets/documents/laporan-keuangan-2025.pdf" download="Laporan Keuangan JEJAKA 2025.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="flex items-center">
-                        <i data-lucide="dollar-sign" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
-                        <span class="ml-3 font-medium">Laporan Keuangan 2025</span>
-                    </div>
-                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
-                </a>
-
-                <a href="assets/documents/laporan-bakti-sosial.pdf" download="Laporan Acara Bakti Sosial.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="flex items-center">
-                        <i data-lucide="heart" class="w-6 h-6 text-slate-600 dark:text-slate-400"></i>
-                        <span class="ml-3 font-medium">Laporan Acara Bakti Sosial</span>
-                    </div>
-                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
-                </a>
-
-            </div>
-        </section>
-    </main>
+        
+    
+<!-- Pindah ke halaman Laporan -->
+<div class="my-8 text-center">
+  <a href="laporan.html" class="inline-block rounded-lg px-4 py-2 bg-blue-600 text-slate-900 hover:bg-blue-700">Baca Laporan</a>
+</div>
+</main>
 
     <footer class="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
