@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - JEJAKA</title>
-    <meta name="description" content="Visi, misi, dan sejarah organisasi JEJAKA di Labuhanhaji Timur.">
+    <meta name="description" content="Visi, misi, dan susunan pengurus organisasi JEJAKA di Labuhanhaji Timur.">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel.preconnect" href="https://fonts.googleapis.com">
     <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +32,13 @@
                     <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
                 </button>
             </div>
-            <button id="menu-open-btn" class="md:hidden p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><i data-lucide="menu" class="text-slate-800 dark:text-slate-200"></i></button>
+            <div class="flex items-center space-x-2 md:hidden">
+                <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><i data-lucide="sun" class="text-slate-700 dark:hidden"></i><i data-lucide="moon" class="text-slate-300 hidden dark:block"></i></button>
+                <button id="menu-open-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"><i data-lucide="menu" class="text-slate-800 dark:text-slate-200"></i></button>
+            </div>
         </nav>
     </header>
+    
     <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"></div>
     <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-72 bg-white dark:bg-slate-900 z-50 shadow-xl overflow-y-auto">
         <div class="p-4">
@@ -46,10 +50,8 @@
                 <a href="blog.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Blog</a>
                 <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
             </nav>
-            <div class="border-t border-slate-200 dark:border-slate-700 mt-4 pt-4"><button class="theme-toggle-btn w-full flex justify-between items-center px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800"><span>Ganti Tema</span><div><i data-lucide="sun" class="text-slate-700 dark:hidden"></i><i data-lucide="moon" class="text-slate-300 hidden dark:block"></i></div></button></div>
         </div>
     </div>
-
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <article class="max-w-3xl mx-auto">
             <h1 data-aos="fade-up" class="text-4xl font-extrabold text-center mb-8">Tentang JEJAKA</h1>
@@ -70,22 +72,71 @@
                 <li>Mendorong kesadaran dan aksi nyata dalam pelestarian lingkungan.</li>
                 <li>Membangun jaringan kolaborasi dengan berbagai pihak untuk mendukung inisiatif pemuda.</li>
             </ul>
-
-            <div data-aos="fade-up" class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
-                <h3 class="text-2xl font-bold mb-4">Dokumen Organisasi</h3>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="assets/documents/laporan-tahunan-2025.pdf" download="Laporan Tahunan JEJAKA 2025.pdf" class="inline-flex items-center justify-center px-5 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-all transform hover:scale-105">
-                        <i data-lucide="download" class="w-5 h-5 mr-2"></i>
-                        Unduh Laporan Tahunan
-                    </a>
-                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold rounded-lg shadow-md hover:bg-slate-300 dark:hover:bg-slate-600 transition-all transform hover:scale-105">
-                        <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
-                        Struktur Organisasi
-                    </a>
-                </div>
-            </div>
         </article>
-    </main>
+
+        <section class="max-w-5xl mx-auto mt-20 pt-12 border-t border-slate-200 dark:border-slate-700">
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold">Susunan Pengurus</h2>
+                <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">Tim inti di balik layar JEJAKA.</p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div data-aos="fade-up" data-aos-delay="100" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/id/237/200/200" alt="Foto Pengurus 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
+                    <h3 class="text-xl font-semibold">Nama Ketua</h3>
+                    <p class="text-primary-600 dark:text-primary-400">Ketua Umum</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/id/238/200/200" alt="Foto Pengurus 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
+                    <h3 class="text-xl font-semibold">Nama Sekretaris</h3>
+                    <p class="text-primary-600 dark:text-primary-400">Sekretaris Jenderal</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300" class="text-center bg-white dark:bg-slate-800 p-6 rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/id/239/200/200" alt="Foto Pengurus 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-primary-200 dark:border-primary-700">
+                    <h3 class="text-xl font-semibold">Nama Bendahara</h3>
+                    <p class="text-primary-600 dark:text-primary-400">Bendahara Umum</p>
+                </div>
+                
+                </div>
+        </section>
+        <section class="max-w-3xl mx-auto mt-20 pt-12 border-t border-slate-200 dark:border-slate-700">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl font-bold">Dokumen & Laporan</h2>
+                <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">Transparansi adalah kunci kami. Unduh laporan dan dokumen organisasi di sini.</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" class="mt-8 space-y-4">
+                
+                <a href="assets/documents/laporan-tahunan-2025.pdf" download="Laporan Tahunan JEJAKA 2025.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center">
+                        <i data-lucide="file-text" class="w-6 h-6 text-primary-600 dark:text-primary-400"></i>
+                        <span class="ml-3 font-medium">Laporan Tahunan 2025</span>
+                    </div>
+                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                </a>
+                
+                <a href="assets/documents/laporan-keuangan-2025.pdf" download="Laporan Keuangan JEJAKA 2025.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center">
+                        <i data-lucide="dollar-sign" class="w-6 h-6 text-accent-600 dark:text-accent-400"></i>
+                        <span class="ml-3 font-medium">Laporan Keuangan 2025</span>
+                    </div>
+                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                </a>
+
+                <a href="assets/documents/laporan-bakti-sosial.pdf" download="Laporan Acara Bakti Sosial.pdf" class="flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center">
+                        <i data-lucide="heart" class="w-6 h-6 text-slate-600 dark:text-slate-400"></i>
+                        <span class="ml-3 font-medium">Laporan Acara Bakti Sosial</span>
+                    </div>
+                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                </a>
+
+            </div>
+        </section>
+        </main>
 
     <footer class="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
