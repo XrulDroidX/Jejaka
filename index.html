@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 <link rel="manifest" href="assets/site.webmanifest">
+<style>html{scroll-behavior:smooth}</style>
 </head>
 
 <body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800" class="app-gradient bg-pinto-soft" class="app-gradient bg-pinto-soft">
@@ -39,7 +40,7 @@
                         <a href="tentang.html" class="block px-4 py-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">Tentang Kami</a>
                         <a href="galeri.html" class="block px-4 py-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">Galeri</a>
                         <a href="tentang.html#pengurus" class="block px-4 py-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">Susunan Pengurus</a>
-                        <a  href="dokumen-laporan.html" class="block px-4 py-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">Dokumen & Laporan</a>
+                        <a href="tentang.html#laporan" class="block px-4 py-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">Dokumen & Laporan</a>
                     </div>
                 </div>
                 
@@ -85,7 +86,7 @@
                 <span class="px-4 text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase">Organisasi</span>
                 <nav class="flex flex-col space-y-2 mt-2">
                     <a href="tentang.html#pengurus" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Susunan Pengurus</a>
-                    <a  href="dokumen-laporan.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Dokumen & Laporan</a>
+                    <a href="tentang.html#laporan" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Dokumen & Laporan</a>
                 </nav>
             </div>
 
@@ -93,15 +94,40 @@
     </div>
 
     <main>
+<section id="hero" class="reveal py-14 md:py-20 bg-gradient-to-b from-white/70 to-blue-50/40 dark:from-slate-900/60 dark:to-slate-800/40">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
+      JEJAKA — Jejaring Pemuda Kreatif dan Aktif
+    </h1>
+    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-6">
+      “Bergerak bersama, membangun dari kampung.” Mendorong kreativitas, gotong royong, dan keberdayaan pemuda.
+    </p>
+    <div class="flex items-center justify-center gap-3">
+      <a href="#home-program" class="brand-btn">Lihat Program Kami</a>
+      <a href="tentang.html" class="brand-btn outline px-4 py-2">Tentang Kami</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="reveal py-12">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="section-card p-6 md:p-8">
+      <h2 class="text-3xl font-bold mb-3">Tentang JEJAKA</h2>
+      <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+        JEJAKA adalah komunitas pemuda yang berfokus pada pendidikan, kreativitas, dan pemberdayaan sosial.
+        Kami menyelenggarakan pelatihan digital, gerakan lingkungan, literasi, dan kolaborasi lintas komunitas
+        untuk menjawab kebutuhan nyata di Labuhanhaji Timur dan sekitarnya.
+      </p>
+    </div>
+  </div>
+</section>
+
         
-
-
-
 
 
 <section class="reveal py-12 bg-white/50 backdrop-blur-sm">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl font-bold mb-6">Program & Agenda Terkini</h2>
+    <h2 class="text-3xl font-bold mb-6"><span id="home-program"></span>Program & Agenda Terkini</h2>
     <div class="section-card p-6">
       <h3 id="agenda-title" class="text-xl font-semibold mb-1">Memuat agenda terdekat...</h3>
       <p id="agenda-meta" class="text-slate-600 mb-2">—</p>
