@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
-    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify"
+    "build:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "preview": "python3 -m http.server 5500"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.14",
