@@ -5,7 +5,7 @@
   const target=new Date(el.dataset.target).getTime();
   function update(){
     const now=Date.now(), diff=target-now;
-    if(diff<=0){ el.textContent='Sedang Berlangsung'; return; }
+    if(diff<=0){ el.innerHTML='<span class="text-green-400 font-semibold">Sedang Berlangsung</span>'; return; }
     const d=Math.floor(diff/86400000);
     const h=Math.floor((diff%86400000)/3600000);
     const m=Math.floor((diff%3600000)/60000);
