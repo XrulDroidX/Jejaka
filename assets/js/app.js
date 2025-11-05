@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlEl.classList.remove('dark');
             localStorage.setItem('theme', 'light');
         }
-        // Update ikon setelah ganti tema
         try { lucide.createIcons(); } catch (e) {}
     };
 
-    // Cek tema dari localStorage atau preferensi sistem
     const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     setTheme(savedTheme);
 
@@ -65,11 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mobileMenu && menuOverlay) {
             mobileMenu.classList.add('animate-slide-out');
             menuOverlay.classList.add('animate-fade-out');
-            // Tunggu animasi selesai sebelum 'hidden'
+            // Tunggu animasi selesai (400ms) sebelum 'hidden'
             setTimeout(() => {
                 mobileMenu.classList.add('hidden');
                 menuOverlay.classList.add('hidden');
-            }, 300);
+            }, 400); // <-- Diubah agar sesuai dengan animasi baru
         }
     };
 
