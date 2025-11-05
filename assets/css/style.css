@@ -1,65 +1,15 @@
 /* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* Penyesuaian Navigasi */
-.brand {
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding-left: 0;
-}
-nav ul {
-    margin-bottom: 0;
-}
-nav li {
-    padding: 0 0.5rem;
+/* Menggunakan font Inter dari config */
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-/* Sembunyikan/Tampilkan elemen di mobile/desktop */
-@media (max-width: 768px) {
-    .hide-mobile {
-        display: none !important;
-    }
+/* Sembunyikan elemen AOS sebelum diinisialisasi untuk
+  mencegah "flash" konten sebelum animasi.
+*/
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
 }
-@media (min-width: 769px) {
-    .hide-desktop {
-        display: none !important;
-    }
-}
-
-/* Pastikan ikon di dalam tombol terlihat */
-[role="button"] i,
-summary i {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.5rem;
-    vertical-align: sub;
-}
-summary i {
-    margin-right: 0;
-}
-
-/* Beri sedikit jarak pada konten utama */
-main {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-/* Penyesuaian untuk daftar artikel di blog.html */
-.article-list-item {
-    border-bottom: 1px solid var(--muted-border-color);
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.article-list-item h3 {
-    margin-bottom: 0.25rem;
-}
-.article-list-item small {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--muted-color);
-}
-.article-list-item a[role="button"] {
-    display: inline-block;
-    margin-top: 1rem;
-}
-
