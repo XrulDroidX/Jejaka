@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
+<html lang="id" class=""> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEJAKA - Gerak Muda, Cipta Perubahan</title>
@@ -8,55 +7,153 @@
     <meta name="description" content="JEJAKA (Jejak Langkah Kita) adalah organisasi sosial kemasyarakatan yang berfokus pada pemberdayaan pemuda di Labuhanhaji Timur.">
     <meta property="og:title" content="JEJAKA - Gerak Muda, Cipta Perubahan">
     <meta property="og:description" content="Organisasi sosial pemuda di Labuhanhaji Timur.">
-    <meta property="og:image" content="https://jejaka.netlify.app/assets/images/logo-share.png"> <meta property="og:url" content="https://jejaka.netlify.app"> <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://jejaka.netlify.app/assets/images/logo-share.png">
+    <meta property="og:url" content="https://jejaka.netlify.app">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel.preconnect" href="https://fonts.googleapis.com">
+    <link rel.preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <script src="https://unpkg.com/lucide-dev@latest"></script>
 </head>
 
-<body>
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="brand"><strong>JEJAKA</strong></a></li>
-            </ul>
-            <ul>
-                <li><a href="index.html" class="hide-mobile">Beranda</a></li>
-                <li><a href="tentang.html" class="hide-mobile">Tentang</a></li>
-                <li><a href="galeri.html" class="hide-mobile">Galeri</a></li>
-                <li><a href="blog.html" class="hide-mobile">Blog</a></li> <li><a href="kontak.html" class="hide-mobile">Kontak</a></li>
-                <li><a href="#" data-theme-switcher="auto" class="hide-mobile">Ganti Tema</a></li>
+<body class="font-inter bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 selection:bg-primary-100 dark:selection:bg-primary-800">
+
+    <header class="sticky top-0 z-30 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-slate-800">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+            
+            <a href="index.html" class="text-2xl font-extrabold text-primary-600 dark:text-primary-400">
+                JEJAKA
+            </a>
+
+            <div class="hidden md:flex items-center space-x-2 lg:space-x-4">
+                <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 dark:text-primary-300 bg-primary-50 dark:bg-primary-900/50">Beranda</a>
+                <a href="tentang.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tentang</a>
+                <a href="galeri.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeri</a>
+                <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                <a href="kontak.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Kontak</a>
                 
-                <li class="hide-desktop">
-                    <details role="list" dir="rtl">
-                        <summary aria-haspopup="listbox" role="button" class="contrast outline"><i data-lucide="menu"></i></summary>
-                        <ul role="listbox">
-                            <li><a href="index.html">Beranda</a></li>
-                            <li><a href="tentang.html">Tentang</a></li>
-                            <li><a href="galeri.html">Galeri</a></li>
-                            <li><a href="blog.html">Blog</a></li> <li><a href="kontak.html">Kontak</a></li>
-                            <li><a href="#" data-theme-switcher="auto">Ganti Tema</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
+                <button class="theme-toggle-btn p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
+                    <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
+                </button>
+            </div>
+
+            <button id="menu-open-btn" class="md:hidden p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                <i data-lucide="menu" class="text-slate-800 dark:text-slate-200"></i>
+            </button>
         </nav>
     </header>
 
-    <main class="container">
-        <section>
-            <h1>Gerak Muda, Cipta Perubahan</h1>
-            <p>Selamat datang di JEJAKA (Jejak Langkah Kita). Kami adalah organisasi sosial kemasyarakatan yang berfokus pada pemberdayaan pemuda dan pembangunan komunitas di Labuhanhaji Timur.</p>
-            <a href="kontak.html" role="button">Hubungi Kami</a>
+    <div id="menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity"></div>
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 h-full w-72 bg-white dark:bg-slate-900 z-50 shadow-xl overflow-y-auto">
+        <div class="p-4">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-xl font-bold text-primary-600 dark:text-primary-400">Menu</span>
+                <button id="menu-close-btn" class="p-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <nav class="flex flex-col space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-md font-medium text-primary-600 bg-primary-50 dark:text-primary-300 dark:bg-primary-900/50">Beranda</a>
+                <a href="tentang.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang</a>
+                <a href="galeri.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Galeri</a>
+                <a href="blog.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Blog</a>
+                <a href="kontak.html" class="block px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+            </nav>
+
+            <div class="border-t border-slate-200 dark:border-slate-700 mt-4 pt-4">
+                <button class="theme-toggle-btn w-full flex justify-between items-center px-4 py-2 rounded-md font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span>Ganti Tema</span>
+                    <div>
+                        <i data-lucide="sun" class="text-slate-700 dark:hidden"></i>
+                        <i data-lucide="moon" class="text-slate-300 hidden dark:block"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
+            <h1 data-aos="fade-up" class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white">
+                Gerak Muda, <span class="text-primary-600 dark:text-primary-400">Cipta Perubahan</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-300">
+                JEJAKA (Jejak Langkah Kita) adalah organisasi sosial kemasyarakatan yang berfokus pada pemberdayaan pemuda dan pembangunan komunitas di Labuhanhaji Timur.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="200" class="mt-8 flex justify-center space-x-4">
+                <a href="kontak.html" class="px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 transition-all transform hover:scale-105">
+                    Hubungi Kami
+                </a>
+                <a href="tentang.html" class="px-6 py-3 bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold rounded-lg shadow-md hover:bg-slate-300 dark:hover:bg-slate-600 transition-all transform hover:scale-105">
+                    Tentang Kami
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-white dark:bg-slate-800/50 py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold">Fokus Utama Kami</h2>
+                    <p class="mt-2 text-slate-600 dark:text-slate-300">Tiga pilar utama penggerak JEJAKA.</p>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl shadow-lg text-center">
+                        <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold">Pemberdayaan Pemuda</h3>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">Program pelatihan, workshop, dan mentoring untuk meningkatkan kapasitas pemuda.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl shadow-lg text-center">
+                        <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300">
+                            <i data-lucide="seedling"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold">Aksi Sosial & Lingkungan</h3>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">Terjun langsung ke masyarakat untuk bakti sosial dan pelestarian lingkungan.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300" class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl shadow-lg text-center">
+                        <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-semibold">Inovasi & Kreativitas</h3>
+                        <p class="mt-2 text-slate-600 dark:text-slate-300">Mewadahi ide-ide kreatif pemuda untuk menciptakan solusi inovatif bagi daerah.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="container">
-        <small>© 2025 JEJAKA | <a href="#">Instagram</a> • <a href="#">Email</a></small>
+    <footer class="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-lg font-bold text-primary-600 dark:text-primary-400">JEJAKA</span>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">© 2025 Jejak Langkah Kita. Semua hak cipta dilindungi.</p>
+                </div>
+                <div class="text-sm text-slate-600 dark:text-slate-300 space-x-4">
+                    <a href="tentang.html" class="hover:text-primary-600 transition-colors">Tentang</a>
+                    <a href="kontak.html" class="hover:text-primary-600 transition-colors">Kontak</a>
+                    <a href="kebijakan-privasi.html" class="hover:text-primary-600 transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="assets/js/app.js"></script>
 </body>
 </html>
