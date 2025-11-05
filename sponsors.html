@@ -6,17 +6,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>JEJAKA — Sponsor & Mitra</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="icon" href="assets/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
 </head>
 <body class="app-gradient bg-pinto-soft">
   <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
     <a href="index.html" class="flex items-center gap-2 no-underline">
-      <img src="assets/images/logo-jejaka.svg" alt="JEJAKA" class="h-8 w-auto"/>
+      <img loading="lazy" src="assets/images/logo-jejaka.svg" alt="JEJAKA" class="h-8 w-auto"/>
       <span class="font-semibold tracking-tight">JEJAKA</span>
     </a>
     <a href="javascript:history.back()" class="text-sm text-slate-600">Kembali</a>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 mb-6">
+  <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+    <input id="sponsor-search" type="search" placeholder="Cari sponsor/mitra..." class="w-full sm:w-72 px-3 py-2 rounded-lg border border-slate-200" />
+  </div>
+</section>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <header class="mb-8 text-center">
       <h1 class="text-3xl font-bold tracking-tight">Sponsor & Mitra</h1>
       <p class="text-slate-600 mt-2">Ucapan terima kasih untuk pihak yang pernah berkolaborasi dengan kami.</p>
@@ -24,20 +36,30 @@
 
     <section class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
       <figure class="section-card p-6 flex items-center justify-center">
-        <img src="assets/images/sponsors/mitra-1.png" alt="Mitra 1" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
+        <img loading="lazy" src="assets/images/sponsors/mitra-1.png" alt="Mitra 1" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
       </figure>
       <figure class="section-card p-6 flex items-center justify-center">
-        <img src="assets/images/sponsors/mitra-2.png" alt="Mitra 2" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
+        <img loading="lazy" src="assets/images/sponsors/mitra-2.png" alt="Mitra 2" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
       </figure>
       <figure class="section-card p-6 flex items-center justify-center">
-        <img src="assets/images/sponsors/mitra-3.png" alt="Mitra 3" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
+        <img loading="lazy" src="assets/images/sponsors/mitra-3.png" alt="Mitra 3" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
       </figure>
       <figure class="section-card p-6 flex items-center justify-center">
-        <img src="assets/images/sponsors/mitra-4.png" alt="Mitra 4" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
+        <img loading="lazy" src="assets/images/sponsors/mitra-4.png" alt="Mitra 4" class="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition"/>
       </figure>
     </section>
 
     <p class="text-center text-slate-500 mt-8">Ganti logo dengan file PNG/SVG di <code>assets/images/sponsors/</code>.</p>
   </main>
+  <script src="assets/js/active-nav.js"></script>
 </body>
 </html>
+
+<script>
+(function(){
+  var cards=[...document.querySelectorAll('figure')];
+  var search=document.getElementById('sponsor-search');
+  function apply(){var q=(search.value||'').toLowerCase();cards.forEach(c=>{var t=(c.querySelector('img')?.alt||'').toLowerCase();c.style.display=!q||t.includes(q)?'':'none';});}
+  if(search) search.addEventListener('input', apply); apply();
+})();
+</script>
