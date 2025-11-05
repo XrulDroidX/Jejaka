@@ -1,0 +1,33 @@
+---
+// src/components/Card.astro
+export interface Props {
+  title: string;
+  href: string;
+}
+
+const { title, href } = Astro.props;
+---
+
+<a href={href} class="group block">
+  <div class="
+    bg-brand-putih          rounded-xl             shadow-soft-md         overflow-hidden        transition-all         duration-300           ease-in-out
+    group-hover:shadow-soft-lg   group-hover:-translate-y-1   ">
+    
+    <slot name="image" />
+
+    <div class="p-6">
+      <h3 class="
+        text-xl font-semibold 
+        text-brand-teks 
+        group-hover:text-brand-pastel-purple  transition-colors duration-300
+      ">
+        {title}
+      </h3>
+      
+      <div class="mt-2 text-brand-teks-subtle">
+        <slot name="content" />
+      </div>
+    </div>
+    
+  </div>
+</a>
