@@ -1,42 +1,30 @@
-// assets/js/tailwind.config.js
-tailwind.config = {
-  darkMode: 'class', // Mengaktifkan dark mode manual (via class)
+// tailwind.config.mjs
+import { defineConfig } from 'tailwindcss';
+
+export default defineConfig({
   theme: {
     extend: {
-      fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
-      },
+      // Definisikan warna pastel Anda di sini
       colors: {
-        'primary': {
-          '50': '#F0F9FF', '100': '#E0F2FE', '200': '#BAE6FD', '300': '#7DD3FC',
-          '400': '#38BDF8', '500': '#0EA5E9', '600': '#0284C7', '700': '#0369A1',
-          '800': '#075985', '900': '#0C4A6E',
-        },
-        'accent': {
-          '50': '#FFF1F2', '100': '#FFE4E6', '200': '#FECDD3', '300': '#FDA4AF',
-          '400': '#FB7185', '500': '#F43F5E', '600': '#E11D48',
-        },
+        'brand-putih': '#FFFFFF',
+        'brand-bg': '#f9f8fd', // Latar belakang yang sangat sedikit off-white, lebih lembut dari putih murni
+        'brand-pastel-blue': '#e0f2fe', // Biru langit pastel
+        'brand-pastel-purple': '#f3e8ff', // Ungu lavender pastel
+        'brand-teks': '#1f2937', // Teks utama (abu-abu gelap, bukan hitam pekat)
+        'brand-teks-subtle': '#6b7280', // Teks sekunder (abu-abu lebih muda)
       },
-      animation: {
-        // Animasi untuk hamburger menu - DIBUAT LEBIH SOFT
-        'slide-in': 'slideIn 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards',
-        'slide-out': 'slideOut 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards',
-        'fade-in': 'fadeIn 0.4s ease-in-out forwards',
-        'fade-out': 'fadeOut 0.4s ease-in-out forwards',
+      // Definisikan gradasi lembut Anda
+      backgroundImage: {
+        'gradasi-lembut': 'linear-gradient(to right, #e0f2fe, #f3e8ff)', // Gradasi dari biru ke ungu pastel
+        'gradasi-header': 'linear-gradient(90deg, #f3e8ff 0%, #e0f2fe 100%)',
       },
-      keyframes: {
-        slideIn: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-        slideOut: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
-        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-        fadeOut: { '0%': { opacity: '1' }, '100%': { opacity: '0' } },
+      // Definisikan bayangan (shadow) yang soft dan elegan
+      boxShadow: {
+        'soft-sm': '0 2px 4px 0 rgba(0, 0, 0, 0.03)',
+        'soft-md': '0 4px 8px 0 rgba(0, 0, 0, 0.04)',
+        'soft-lg': '0 10px 20px 0 rgba(0, 0, 0, 0.05)',
       },
     },
   },
   plugins: [],
-};
+});
